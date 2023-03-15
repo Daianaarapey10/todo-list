@@ -8,16 +8,20 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="foto"></div>
+    <div class="foto-dos"></div>
   <div class="container-general">
     <div class="container-input">
-        <input class="input-style" type="text" placeholder="Añade el nombre a la lista"> 
-        <button class="button-add">+</button>
+        <input class="input-style" id="input-js" type="text" placeholder="Añade el nombre a la lista"> 
+        <button class="button-add" onclick="addToDo()">+</button>
     </div>
     <div class="container-list">
-       <ul class="ul-container">
-         <li class="li-style">Daiana <button class="button-delete">🗑️</button></li>
+       <ul class="ul-container" id="list">
+        
        </ul>
     </div>
+    <button class="complet-delete">DELETE</button>
   </div>
 </body>
+<script src="./index.js"></script>
 </html>
