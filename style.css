@@ -1,0 +1,126 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.foto {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    background: rgb(32,6,90);
+    background: linear-gradient(90deg, rgba(32,6,90,0.3) 0%, rgba(114,23,194,0.3) 35%, rgba(0,212,255,0.2) 100%);
+
+}
+
+.foto-dos {
+    background-image: url('https://picsum.photos/900/200');
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    background-size: cover;
+    top: 0;
+}
+
+.container-general {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.container-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    background: white;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 10px -2px;
+}
+
+.input-style {
+    border-radius: 5px;
+    padding: 10px;
+    font-family: cursive;
+    width: 100%;
+    border: none;
+}
+
+.button-add {
+    border-radius: 15px;
+    font-size: 1.5rem;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    border: 2px solid #a999bb;
+    color: #5200ad;
+}
+
+.button-add:hover {
+    background: rgb(204, 241, 244);
+}
+
+.container-list {
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    width: 400px;
+    box-shadow: 0px 0px 10px -4px;
+}
+
+.ul-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.li-style {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-family: cursive;
+}
+
+.button-delete {
+    border: 1px solid #5d5b5b;
+    border-radius: 10px;
+}
+
+    .button-add, .button-delete, .complet-delete:hover {
+    cursor: pointer; 
+}
+
+.div-button-delete {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.complet-delete {
+    font-family: cursive;
+    font-size: 0.7rem;
+    color: #9c23ae;
+    border: none;
+    background: none;
+    box-shadow: 0px 0px 10px -4px;
+    padding: 5px 10px;
+}
+
+.complet-delete:hover {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+input:focus{
+    outline: none;
+}

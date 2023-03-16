@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="foto"></div>
+    <div class="foto-dos"></div>
+  <div class="container-general">
+    <div class="container-input">
+        <input class="input-style" id="input-js" type="text" placeholder="Añade el nombre a la lista"> 
+        <button class="button-add" onclick="addToDo()">+</button>
+    </div>
+    <div class="container-list">
+       <ul class="ul-container" id="list">
+        
+       </ul>  
+    </div>
+    <div class="div-button-delete">
+      <button class="complet-delete" id="complet-delete" onclick="vaciarTodo()">VACIAR LISTA</button>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
